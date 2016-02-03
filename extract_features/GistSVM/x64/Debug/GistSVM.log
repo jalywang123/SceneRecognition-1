@@ -1,0 +1,12 @@
+﻿Build started 3/2/16 16:58:42.
+     1>Project "C:\Users\Johnny\Desktop\extract_features\GistSVM\GistSVM.vcxproj" on node 2 (Build target(s)).
+     1>Lib:
+         C:\Softwares\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Johnny\Desktop\extract_features\build\x64\Debug\GistSVM.lib" /NOLOGO /MACHINE:X64 x64\Debug\gist_svm.obj
+         x64\Debug\gist.obj
+         x64\Debug\standalone_image.obj
+         GistSVM.vcxproj -> C:\Users\Johnny\Desktop\extract_features\build\x64\Debug\GistSVM.lib
+     1>Done Building Project "C:\Users\Johnny\Desktop\extract_features\GistSVM\GistSVM.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.12

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_PropertySheetDisplayName>GIST_x64_Release</_PropertySheetDisplayName>
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(WFFT_PATH);$(PTHREAD_PATH)\include;$(OPENCV_3_0_0_CPU)\include;$(OPENCV_3_0_0_CPU)\include\opencv;$(BOOST_1_56_0);$(SolutionDir);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;USE_GIST;STANDALONE_GIST;%(PreprocessorDefinitions)</PreprocessorDefinitions> 
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(WFFT_PATH);$(PTHREAD_PATH)\lib\x64;$(OPENCV_3_0_0_CPU)\lib;$(BOOST_1_56_0)\lib64-msvc-12.0;$(SolutionDir)build\$(Platform)\$(Configuration);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_ts300.lib;opencv_world300.lib;libfftw3f-3.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
