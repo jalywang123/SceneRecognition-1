@@ -76,8 +76,10 @@ int main(int argc, const char** argv){
 	Mat testData;
 
 	//iterate over the video folder
-	int i = starting_f;
-	while (i != finishing_f + 1){
+	//from 0 to starting_f + 20
+	int i = 0;
+	int end = starting_f + 10;
+	for (; i <= end; ++i){
 		ostringstream image_num;
 		image_num << setfill('0') << setw(6) << i;
 		string img = image_path + "\\" + "img" + image_num.str() + ".jpg";
@@ -91,12 +93,41 @@ int main(int argc, const char** argv){
 			descsize = gsvm.cal_gray_descriptor_size();
 		else
 			descsize = gsvm.cal_color_descriptor_size();
-		
+
 		float* result = gsvm.calc_gist_feature(tmpImg);
 		Mat tmp_img = Mat(1, descsize, CV_32FC1, result);
 
 		testData.push_back(tmp_img);
-		++i;
+		cout << endl << "i =" << i << endl;
+	}
+
+	//from starting_f + 20 + 120 to finishing_f
+	i = starting_f + 10 + 120;
+	end = finishing_f;
+
+	assert(i < end);
+
+	for (; i <= end; i += 25){
+		ostringstream image_num;
+		image_num << setfill('0') << setw(6) << i;
+		string img = image_path + "\\" + "img" + image_num.str() + ".jpg";
+		Mat tmpImg = imread(img);
+		//extract image feature and store it in Mat
+
+		int imageChannels = tmpImg.channels();
+		assert(imageChannels == 1 || imageChannels == 3);
+		int descsize;
+		if (imageChannels == 1)
+			descsize = gsvm.cal_gray_descriptor_size();
+		else
+			descsize = gsvm.cal_color_descriptor_size();
+
+		float* result = gsvm.calc_gist_feature(tmpImg);
+		Mat tmp_img = Mat(1, descsize, CV_32FC1, result);
+
+		testData.push_back(tmp_img);
+
+		cout << endl << "i =" << i << endl;
 	}
 
 	//print out test set size
@@ -113,8 +144,17 @@ int main(int argc, const char** argv){
 
 		float response = gsvm.predict_mat(sampleMat);
 
+		int out_number;
+
+		if (j <= starting_f + 10)
+			out_number = j;
+		else if (j == starting_f + 10 + 1)
+			out_number = starting_f + 10 + 120;
+		else 
+			out_number = starting_f + 10 + 120 + (j - starting_f - 10 - 1) * 25;
+		
 		ostringstream image_num;
-		image_num << setfill('0') << setw(6) << j + starting_f;
+		image_num << setfill('0') << setw(6) << out_number;
 		string img = image_path + "\\" + "img" + image_num.str() + ".jpg";
 		Mat tmp_img = imread(img);
 

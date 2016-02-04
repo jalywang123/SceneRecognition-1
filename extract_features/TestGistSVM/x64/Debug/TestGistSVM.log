@@ -1,4 +1,4 @@
-﻿Build started 3/2/16 22:53:33.
+﻿Build started 4/2/16 12:14:32.
      1>Project "C:\Users\Johnny\Desktop\extract_features\TestGistSVM\TestGistSVM.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Softwares\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Johnny\Desktop\extract_features\ /I"C:\toolkits\fftw-3.3.4-dll64" /I"C:\toolkits\pthreads-w32-2-9-1\Pre-built.2\include" /I"C:\toolkits\opencv-3.0.0\cpu\build\include" /I"C:\toolkits\opencv-3.0.0\cpu\build\include\opencv" /IC:\toolkits\boost_1_56_0 /IC:\Users\Johnny\Desktop\extract_features\ /Zi /nologo /W1 /WX- /Od /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D USE_GIST /D STANDALONE_GIST /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt testGistSVM.cpp
@@ -13,4 +13,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.56
+Time Elapsed 00:00:02.08
