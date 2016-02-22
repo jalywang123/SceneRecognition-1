@@ -140,19 +140,6 @@ void GistSVM::load_svm_from_file(string svmfile){
 
 void GistSVM::train_SVM(const Mat trainData, const Mat labelData){
 	
-	//check trainData size. It must be the same as the result of calc_descriptor_size
-	
-	int descriptor_size;
-	
-	if (trainData.channels() == 1)
-		descriptor_size = this->cal_gray_descriptor_size();
-	else if (trainData.channels() == 3)
-		descriptor_size = this->cal_color_descriptor_size();
-	else
-		cout << endl << "Calculate descriptor size error !" << endl;
-	
-	assert(descriptor_size == trainData.cols);
-
 	//train svm model
 	cout << endl << "Training SVM Model......" << endl;
 	this->svm_ = SVM::create();

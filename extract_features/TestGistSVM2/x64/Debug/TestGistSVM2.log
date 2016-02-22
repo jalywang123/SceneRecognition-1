@@ -1,0 +1,16 @@
+﻿Build started 21/2/16 14:02:44.
+     1>Project "C:\Users\Johnny\Desktop\extract_features\TestGistSVM2\TestGistSVM2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Softwares\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Johnny\Desktop\extract_features\ /I"C:\toolkits\fftw-3.3.4-dll64" /I"C:\toolkits\pthreads-w32-2-9-1\Pre-built.2\include" /I"C:\toolkits\opencv-3.0.0\cpu\build\include" /I"C:\toolkits\opencv-3.0.0\cpu\build\include\opencv" /IC:\toolkits\boost_1_56_0 /IC:\Users\Johnny\Desktop\extract_features\ /Zi /nologo /W1 /WX- /O2 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D USE_GIST /D STANDALONE_GIST /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt testGistSVM.cpp
+         testGistSVM.cpp
+     1>C:\toolkits\opencv-3.0.0\cpu\build\include\opencv2/core/mat.hpp(1965): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>C:\toolkits\opencv-3.0.0\cpu\build\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>C:\toolkits\opencv-3.0.0\cpu\build\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+       Link:
+         C:\Softwares\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Johnny\Desktop\extract_features\build\x64\Debug\TestGistSVM2.exe" /NOLOGO /LIBPATH:"C:\toolkits\fftw-3.3.4-dll64" /LIBPATH:"C:\toolkits\pthreads-w32-2-9-1\Pre-built.2\lib\x64" /LIBPATH:"C:\toolkits\opencv-3.0.0\cpu\build\lib" /LIBPATH:"C:\toolkits\boost_1_56_0\lib64-msvc-12.0" /LIBPATH:C:\Users\Johnny\Desktop\extract_features\build\x64\Debug opencv_ts300d.lib opencv_world300d.lib "libfftw3f-3.lib" pthreadVC2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\Johnny\Desktop\extract_features\build\x64\Debug\TestGistSVM2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Johnny\Desktop\extract_features\build\x64\Debug\TestGistSVM2.lib" /MACHINE:X64 x64\Debug\testGistSVM.obj
+         TestGistSVM2.vcxproj -> C:\Users\Johnny\Desktop\extract_features\build\x64\Debug\TestGistSVM2.exe
+     1>Done Building Project "C:\Users\Johnny\Desktop\extract_features\TestGistSVM2\TestGistSVM2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.05

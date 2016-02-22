@@ -1,6 +1,12 @@
-﻿Build started 3/2/16 16:58:42.
+﻿Build started 19/2/16 18:39:11.
      1>Project "C:\Users\Johnny\Desktop\extract_features\GistSVM\GistSVM.vcxproj" on node 2 (Build target(s)).
-     1>Lib:
+     1>ClCompile:
+         C:\Softwares\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Johnny\Desktop\extract_features\ /I"C:\toolkits\fftw-3.3.4-dll64" /I"C:\toolkits\pthreads-w32-2-9-1\Pre-built.2\include" /I"C:\toolkits\opencv-3.0.0\cpu\build\include" /I"C:\toolkits\opencv-3.0.0\cpu\build\include\opencv" /IC:\toolkits\boost_1_56_0 /IC:\Users\Johnny\Desktop\extract_features\ /Zi /nologo /W1 /WX- /O2 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D USE_GIST /D STANDALONE_GIST /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt gist_svm.cpp
+         gist_svm.cpp
+     1>C:\toolkits\opencv-3.0.0\cpu\build\include\opencv2/core/mat.hpp(1965): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>C:\toolkits\opencv-3.0.0\cpu\build\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>C:\toolkits\opencv-3.0.0\cpu\build\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+       Lib:
          C:\Softwares\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Johnny\Desktop\extract_features\build\x64\Debug\GistSVM.lib" /NOLOGO /MACHINE:X64 x64\Debug\gist_svm.obj
          x64\Debug\gist.obj
          x64\Debug\standalone_image.obj
@@ -9,4 +15,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.12
+Time Elapsed 00:00:00.90
